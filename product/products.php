@@ -1,5 +1,5 @@
 <?php
-$db = new \mysqli("localhost","jpdev","12345678","product_db");
+$db = new mysqli("localhost","root","","product_db");
 if($db->connect_error) die($db->connect_error);
 if(isset($_POST['add']) || isset($_POST['update'])){
 $n = $db->real_escape_string($_POST['name']);
