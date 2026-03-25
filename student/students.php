@@ -1,5 +1,5 @@
 <?php
-$c = mysqli_connect("localhost", "jpdev", "12345678", "students_db");
+$c = mysqli_connect("localhost", "root", "", "students_db");
 if (isset($_POST['add']) || isset($_POST['update'])) {
     [$n, $e, $co, $s, $g, $b, $id] = [$_POST['name'], $_POST['email'], $_POST['course'], $_POST['section'], $_POST['gender'], $_POST['birthday'], $_POST['id'] ?? ''];
     mysqli_query($c, isset($_POST['add'])
