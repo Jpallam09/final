@@ -1,5 +1,5 @@
 <?php
-$db = new \mysqli("localhost","jpdev","12345678","products_db");
+$db = new mysqli("localhost","root","","products_db");
 if($db->connect_error) die($db->connect_error);
 
 if(isset($_POST['add']) || isset($_POST['update'])){
